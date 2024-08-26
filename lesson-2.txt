@@ -1,0 +1,10 @@
+1.
+git init: Khởi tạo thư mục được quản lý bởi git 
+git add <file_name> - add 1  file cụ thể từ vùng working directory sang vùng staging area (add các file mới or có chỉnh sửa từ máy local sang vùng chuẩn bị commit để tạo ra các version
+git add ., muc đích tương tự như lệnh git add <file_name> nhưng scope rộng hơn, tác động tới toàn bộ các file đang có vùng working directory
+git commit -m “message”: đẩy các file có ở vùng staging area lên repository, mỗi commit là 1 phiên bản code
+
+2. 
+file1: vùng repository
+file2, file3: working directory
+
