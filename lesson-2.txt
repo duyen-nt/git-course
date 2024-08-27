@@ -5,6 +5,35 @@ git add ., muc đích tương tự như lệnh git add <file_name> nhưng scope 
 git commit -m “message”: đẩy các file có ở vùng staging area lên repository, mỗi commit là 1 phiên bản code
 
 2. 
-file1: vùng repository
-file2, file3: working directory
+/* Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng
+vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên
+máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init
+c. Chạy lệnh: git commit -m”init project”
+d. Chạy lệnh: git add file1
+e. Chạy lệnh: git commit -m”add file1”
+f. Chạy lệnh: git add file
+*/
+a. Tạo 3 file: file1, file2, file3
+-> Cả 3 file file1, file2, file3 đều ở vùng working directory
+b. Chạy lệnh: git init
+-> Khởi tạo thư mục lesson-2 được quản lý bở git
+Cả 3 file file1, file2, file3 đều ở vùng working directory
+c. Chạy lệnh: git commit -m”init project”
+- Lệnh này dùng để đẩy các file có ở vùng staging area lên repository, tuy nhiên hiện tại chưa có file nào ở vùng staging area
+Cả 3 file file1, file2, file3 đều ở vùng working directory
+d. Chạy lệnh: git add file1
+-> Add file1 vào vùng staging area
+file2, file3 vẫn ở vùng working directory
+e. Chạy lệnh: git commit -m”add file1”
+-> Đẩy file 1 từ vùng staging area lên vùng repository
+file2, file3 vẫn ở vùng working directory
+f. Chạy lệnh: git add file
+-> Báo lỗi do không tồn tại file 
+
+KQ:
+- file1: vùng repository
+- file2, file3: vùng working directory
+
 
