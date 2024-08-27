@@ -16,7 +16,7 @@ e. Chạy lệnh: git commit -m”add file1”
 f. Chạy lệnh: git add file
 */
 a. Tạo 3 file: file1, file2, file3
--> Cả 3 file file1, file2, file3 đều ở vùng working directory
+-> Cả 3 file file1, file2, file3 đều không nằm ở vùng nào vì chưa khởi tạo thư mục git
 b. Chạy lệnh: git init
 -> Khởi tạo thư mục lesson-2 được quản lý bở git
 Cả 3 file file1, file2, file3 đều ở vùng working directory
