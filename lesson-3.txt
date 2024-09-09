@@ -59,6 +59,7 @@ repository: file1
 3. Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo
 từng vùng sau khi thao tác các lệnh sau:
 a. Chạy lệnh git init
+Khởi tạo git Repository, lesson-3-git
 working directory: 
 staging area:
 repository:
@@ -71,17 +72,20 @@ repository:
 c. Thêm file .gitignore, thêm vào 2 dòng:
 i. file1.txt
 ii. oops/
-working directory: file1.txt, file2.txt, oops/file3.txt
+working directory: file2.txt
+.gitignore: file1.txt, oops/file3.txt
 staging area:
 repository:
 
 d. Chạy lệnh: git add .
-working directory: file1.txt, oops/file3.txt
-staging area: file2.txt
+working directory: 
+.gitignore: file1.txt, oops/file3.txt
+staging area: file2.txt, .gitignore
 repository:
 
 e. Chạy lệnh: git commit -m"init project"
-working directory: file1.txt, oops/file3.txt
+working directory: 
+.gitignore: file1.txt, oops/file3.txt
 staging area: 
-repository: file2.txt
+repository: file2.txt, .gitignore
 
